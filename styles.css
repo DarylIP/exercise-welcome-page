@@ -1,0 +1,115 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: rgb(25, 37, 55); /* Solid black background */
+  height: 100vh;
+  color: white; /* Text color */
+}
+
+nav {
+  display: flex;
+  justify-content: flex-end;
+  position: fixed;
+  height: 50px;
+  width: 100%;
+  background-color: green; /* Solid black background */
+}
+
+ul {
+  list-style: none;
+}
+
+.nav-list {
+  display: flex;
+  margin-right: 2rem;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+
+#navbar a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  height: 50px; /* Set the desired height */
+  width: 100px; /* Set the desired width */
+  display: inline-block; /* Change display to respect height/width */
+  text-align: center; /* To align text horizontally */
+  line-height: 50px; /* To align text vertically */
+}
+
+a:hover {
+  background-color: pink;
+  color: black;
+}
+
+.welcome-section {
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+}
+
+.programmer {
+  color: red;
+  font-style: italic;
+  font-weight: bold;
+}
+
+#projects {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 50px;
+  gap: 30px;
+}
+.project-tile {
+  height: 200px;
+  width: 200px;
+  border: 1px white solid;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.project-tile:hover {
+  border: 3px white solid;
+  transition: 1s;
+}
+img:hover {
+  transform: scale(1.2);
+  transition: 2s;
+}
+
+@media only screen and (min-width: 375px) and (max-width: 390px) and (orientation: portrait) {
+  /* Custom styles for iPhone 14 in portrait mode */
+  .nav-list {
+    display: flex;
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+    gap: 0px;
+  }
+
+  #navbar a {
+    width: 75px;
+  }
+
+  .welcome-section {
+    width: 100%;
+    font-size: smaller;
+    height: 50%;
+  }
+
+  #projects {
+    font-size: smaller;
+    padding-bottom: 50px;
+    gap: 30px;
+  }
+}
